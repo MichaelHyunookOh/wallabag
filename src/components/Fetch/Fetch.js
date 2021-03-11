@@ -62,7 +62,7 @@ export default function Input() {
   const displayInformation = (e) => {
     return (
       <div>
-        <p>
+        <h3>
           {entries._embedded.items.map((item, index) => (
             <p key={index}>
               {item.given_url}
@@ -76,7 +76,7 @@ export default function Input() {
               ></img>
             </p>
           ))}
-        </p>
+        </h3>
       </div>
     );
   };
